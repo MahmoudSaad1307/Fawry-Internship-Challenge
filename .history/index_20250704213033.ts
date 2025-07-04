@@ -1,0 +1,27 @@
+import { products } from "./data/products";
+import { Cart } from "./models/Cart";
+
+
+
+
+
+
+const customers = [{
+  id: "c1",
+  name: "Mahmoud Saad",
+  balance: 1000,
+},
+{
+  id: "c2",
+  name: "Ahmed Saad",
+  balance: 2000,
+},
+]
+
+
+
+const cart = new Cart(products); // `products` is your full list
+
+
+
+// console.log(products);

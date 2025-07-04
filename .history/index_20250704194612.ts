@@ -1,0 +1,24 @@
+type Product = {
+  name: string;
+  price?: number;
+  quantity?: number;
+  shippingFees?: number;
+  shippineWeight?: number;
+};
+
+
+function createProduct({
+  name,
+  price = 0,
+  quantity = 1,
+  shippingFees = 0,
+  shippleWeight = 0,
+}: Product): Required<Product> {
+  return { name, price, quantity, shippingFees };
+}
+const product = createProduct({
+  name: "Laptop",
+  price: 50000,
+});
+
+console.log({ product });
