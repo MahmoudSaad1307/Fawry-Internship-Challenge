@@ -9,7 +9,7 @@ const customers: Customer[] = [
   { id: "c3", name: "Saul Goodman", balance: 500 },
 ];
 
-// Creates and returns a deep copy of all products to avoid modifying the original list
+// avoid modifying the original list
 function cloneProducts() {
   return products.map(p => ({ ...p }));
 }
